@@ -36,9 +36,7 @@ This project was developed and tested in the following environment. While it may
 
 The quality of the learned embeddings can be demonstrated through word analogy tasks. The model can solve analogies like:
 
-* `king - man + woman ≈ queen`
-* `paris - france + germany ≈ berlin`
-* `big - bigger + small ≈ smaller`
+`king - man + woman ≈ queen`
 
 An analogy script or evaluation function will be provided to test these relationships with your trained model.
 
@@ -102,3 +100,4 @@ Modern contextual language models, such as BERT (Bidirectional Encoder Represent
 ## Author
 
 This project was written by a human.
+
