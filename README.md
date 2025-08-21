@@ -52,11 +52,6 @@ train_model.model_type = "cbow"
 train_model.epochs=10
 train_model.sparse_lr=0.01
 train_model.dense_lr=0.001
-train_model.log_step=100
-train_model.vocab_size=25000
-train_model.batch_size=25
-train_model.embedding_dim=200
-train_model.dataset=['wikitext','wikitext-2-raw-v1']
 ```
 
 ## Getting Started
@@ -80,13 +75,17 @@ pip install -e .
 3. Start Training:
 ```bash
 mkdir emb ckpt data exps
-python3 w2v_demo/main.py --gin-config-file=w2v_demo/configs/cbow-2.gin
+python3 word2vec/main.py --gin-config-file=word2vec/configs/cbow-2.gin
 ```
 
 4. Monitoring Training
 ```bash
 tensorboard --logdir exps --port 8082 --bind_all
 ```
+
+![Loss](img/loss.jpg "Loss")
+![Loss](img/analogy.jpg "Analogy")
+
 5. Evaluate Embeddings:
 
 python evaluate.py --model_path /path/to/your/model.pt

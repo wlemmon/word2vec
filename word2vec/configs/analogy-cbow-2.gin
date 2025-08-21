@@ -1,0 +1,5 @@
+main.embeddings_file = "emb/cbow-w2_embeddings.pth"
+
+data.load.dataset=['wikitext','wikitext-2-raw-v1']
+data.load.vocab_size=25000
+data.load.batch_size=25

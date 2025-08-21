@@ -15,4 +15,7 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
-Homepage = "https://github.com/wlemmon/diffusion_rec"
+Homepage = "https://github.com/wlemmon/word2vec"
+
+[tool.setuptools]
+packages = ["word2vec"]
