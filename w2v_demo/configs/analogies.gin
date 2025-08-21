@@ -1,0 +1,6 @@
+main.model_type = "cbow"
+main.window_size=10
+main.vocab_size=25000
+main.batch_size=1024
+main.num_readers=8
+main.dataset=['wikitext','wikitext-103-raw-v1']
